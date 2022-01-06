@@ -7,11 +7,11 @@ terraform {
     }
   }
 
-#   backend "s3" {
-#    bucket = "ibm-terraform-training"
-#    key    = "remotestate.tfstate"
-#    region = "ap-south-1"
-#  }
+   backend "s3" {
+    bucket = "ibm-terraform-training"
+    key    = "remotestate.tfstate"
+    region = "ap-south-1"
+  }
 
 }
 
