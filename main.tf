@@ -29,7 +29,7 @@ resource "random_id" "tf_bucket_id" {
 
 resource "aws_s3_bucket" "ashish_bucket" {
   count         = 1
-  bucket        = "${count.index}-carlos-${var.project_name}-${random_id.tf_bucket_id.dec}"
+  bucket        = "${count.index}-carlos2-${var.project_name}-${random_id.tf_bucket_id.dec}"
   acl           = "private"
   force_destroy = true
   tags  = {
